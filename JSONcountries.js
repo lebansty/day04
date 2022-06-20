@@ -22,9 +22,9 @@ req.open('GET','https://restcountries.com/v3.1/all');
 req.send();
 
 req.onload=function(){
-    var country=JSON.parse(this.responseText);
-    console.log(country);
-    for(let coun of country){
-        console.log(coun.region,coun.name,coun.subregion,coun.population);
+    var ctry=JSON.parse(this.responseText);
+    console.log(ctry);
+    for(let con of ctry){
+        console.log(con.flag);
     }
 }
